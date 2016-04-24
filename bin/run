@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/app'
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'app'
 
 App.new.run

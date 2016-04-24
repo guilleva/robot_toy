@@ -11,10 +11,10 @@ class App
   QUIT_COMMAND = 'QUIT'
 
   PLACE_REGEXP = /\A
-                  PLACE\s*
-                  (?<x>\d+)\s*,\s*
-                  (?<y>\d+)\s*,\s*
-                  (?<face>NORTH|SOUTH|EAST|WEST)\s*
+                  PLACE\s*                            # Command
+                  (?<x>\d+)\s*,\s*                    # X
+                  (?<y>\d+)\s*,\s*                    # Y
+                  (?<face>NORTH|SOUTH|EAST|WEST)\s*   # FACE
                   \z/x
 
   attr_reader :robot
